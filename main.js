@@ -18,7 +18,7 @@ function loadXMLDoc() {
     image = xmlDoc.getElementsByTagName("image");
     for (i = 0; i< title_temp.length; i++) {
       txt += '<div class="border border-primary border-2 rounded mt-2 "><p class="fs-2 text-center fw-bold">' + title_temp[i].childNodes[0].nodeValue + '</p> <br>'
-       + '<div class="row"><div class="col col-12 col-lg-6 col-sm-12"><img src="Image/'+ image[i].childNodes[0].nodeValue+ '" class="img-fluid rounded"></div>' + 
+       + '<div class="row"><div class="col col-12 col-lg-6 col-sm-12"><img src="image/'+ image[i].childNodes[0].nodeValue+ '" class="img-fluid rounded"></div>' + 
        '<div class="col col-12 col-lg-6 col-sm-12"><p class="fs-3" >' + description[i].childNodes[0].nodeValue + '</p></div></div><br></div>';
     }
     document.getElementById("main_part").innerHTML = txt;
